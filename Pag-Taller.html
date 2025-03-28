@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        header{
+            background-color:#19897c;
+            text-align: center;
+        } nav, section, article, aside, footer { margin-bottom: 20px; }
+        h1, h2 { color: #333; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline; margin-right: 10px; }
+        svg { width: 100%; max-width: 400px; height: 200px; }
+        .bar { transition: height 0.3s; }
+        footer{
+            background-color:#19897c;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Blog Personal</h1> </header>
+        <nav>
+            <ul>
+                <li><a href="#recientes">Artículos Recientes</a></li>
+                <li><a href="#citas">Citas Inspiradoras</a></li>
+                <li><a href="#popularidad">Popularidad</a></li>
+            </ul>
+        </nav>
+        <input list="articulos" placeholder="Buscar artículo...">
+        <datalist id="articulos">
+            <option value="Artículo 1">
+            <option value="Artículo 2">
+            <option value="Artículo 3">
+            <option value="Artículos Relacionados"></option>
+        </datalist>
+   
+    
+    <section id="recientes">
+        <h2>Artículos Recientes</h2>
+        <article data-id="1" data-lecturas="0"> <!--Actualizacion de barras-->
+            <h3>Artículo 1</h3>
+            <time datetime="2025-03-10">10 de marzo de 2025</time>
+            <p> La Inteligencia Artificial: Revolución Tecnológica del Siglo XXI
+                
+                La inteligencia artificial (IA) ha transformado nuestra sociedad de manera profunda en las últimas décadas. Desde asistentes virtuales como Siri y Alexa hasta sistemas avanzados de diagnóstico médico, la IA se ha convertido en una herramienta indispensable en numerosos sectores.  
+                
+                El término "inteligencia artificial" hace referencia a la capacidad de las máquinas para realizar tareas que normalmente requieren inteligencia humana, como el reconocimiento de voz, la toma de decisiones y el aprendizaje automático. Su desarrollo ha sido posible gracias al avance del machine learning y las redes neuronales, que permiten a los sistemas mejorar con el tiempo a partir de datos y experiencias.  
+                
+                Uno de los debates más relevantes en torno a la IA es su impacto en el empleo y la ética. Mientras que algunas profesiones están siendo automatizadas, la IA también crea nuevas oportunidades de trabajo en campos como la ciencia de datos y la ciberseguridad. Además, surgen preocupaciones sobre el uso responsable de esta tecnología, especialmente en ámbitos como la privacidad y la toma de decisiones autónomas.  
+                
+                El futuro de la IA es prometedor. Con avances en robótica, procesamiento del lenguaje natural e inteligencia artificial generativa, se espera que esta tecnología siga revolucionando nuestra forma de vivir y trabajar. Sin embargo, su desarrollo debe ir acompañado de una regulación adecuada para garantizar un uso ético y seguro.  
+                
+                La IA no es el futuro, sino el presente. ¿Estamos preparados para adaptarnos a esta nueva era tecnológica?</p>
+            <button onclick="leerArticulo(1)">Marcar artículo como leído</button>
+        </article>
+        <article data-id="2" data-lecturas="0">
+            <h3>Artículo 2</h3>
+            <time datetime="2025-03-08">8 de marzo de 2025</time>
+            <p>Ciberseguridad: Protección en la Era Digital 
+                
+                En un mundo cada vez más digitalizado, la ciberseguridad se ha convertido en una prioridad para individuos, empresas y gobiernos. Con el constante aumento de ciberataques y robos de información, proteger los datos y sistemas informáticos es fundamental para garantizar la seguridad y privacidad en línea.  
+                
+                La ciberseguridad abarca un conjunto de prácticas, tecnologías y medidas diseñadas para proteger redes, dispositivos y datos contra accesos no autorizados, ataques maliciosos y pérdidas de información. Entre las amenazas más comunes se encuentran el phishing, el ransomware y los ataques de ingeniería social, que buscan explotar vulnerabilidades humanas y tecnológicas.  
+                
+                Para mitigar estos riesgos, es crucial adoptar hábitos de seguridad como el uso de contraseñas seguras, la autenticación en dos pasos y la actualización constante del software. Además, las empresas deben implementar políticas de seguridad robustas, como el cifrado de datos y la educación en ciberseguridad para sus empleados.  
+                
+                A nivel global, gobiernos y organizaciones trabajan en normativas y estrategias para fortalecer la ciberseguridad, destacando regulaciones como el Reglamento General de Protección de Datos (GDPR) en Europa y leyes similares en otras regiones. Sin embargo, la seguridad digital sigue siendo un desafío en evolución, ya que los ciberdelincuentes desarrollan constantemente nuevas técnicas de ataque.  
+                
+                En la era digital, la ciberseguridad no es una opción, sino una necesidad. La conciencia y la prevención son clave para proteger nuestra información y garantizar un entorno digital más seguro.  
+            </p>
+            <button onclick="leerArticulo(2)">Marcar artículo como leído</button>
+        </article>
+        <article data-id="3" data-lecturas="0">
+            <h3>Artículo 3</h3>
+            <time datetime="2025-03-05">5 de marzo de 2025</time>
+            <p>Ingeniería de Sistemas: La Ciencia de la Solución de Problemas
+                
+                La Ingeniería de Sistemas es una disciplina fundamental en el mundo moderno, encargada de diseñar, analizar e implementar soluciones tecnológicas que optimicen procesos en diversas industrias. Su enfoque multidisciplinario combina matemáticas, informática, electrónica y gestión para resolver problemas complejos y mejorar la eficiencia de los sistemas.  
+                
+                Esta ingeniería se aplica en múltiples campos, como el desarrollo de software, la ciberseguridad, la inteligencia artificial, la administración de redes y la optimización de procesos industriales. Su objetivo principal es la creación de sistemas eficientes, seguros y escalables, adaptados a las necesidades específicas de cada sector.  
+                
+                Los ingenieros de sistemas desempeñan un papel clave en la transformación digital, diseñando arquitecturas tecnológicas para empresas, desarrollando aplicaciones innovadoras y garantizando la seguridad de la información. Además, trabajan con metodologías como DevOps, Scrum y Big Data para optimizar el desarrollo y mantenimiento de sistemas tecnológicos.  
+                
+                En un mundo cada vez más digitalizado, la demanda de profesionales en esta área sigue en aumento. Con la expansión de la computación en la nube, la automatización y la inteligencia artificial, la Ingeniería de Sistemas se ha convertido en una de las carreras con mayor impacto en la sociedad y la economía global.  
+                
+                Sin duda, esta disciplina es esencial para el avance tecnológico y la construcción de un futuro más eficiente e interconectado.  
+             </p>
+            <button onclick="leerArticulo(3)">Marcar artículo como leído</button>
+        </article>
+    </section>
+    
+    <aside>
+        <h2>Artículos Relacionados</h2>
+        <ul>
+            <li><a href="https://cloud.google.com/learn/what-is-artificial-intelligence?hl=es-419">¿Qué son las IA?</a></li>
+            <li><a href="https://www.escuelaing.edu.co/es/campus/por-que-estudiar-ingenieria-en-ciberseguridad/">Ingeniería en Ciberseguridad</a></li>
+        </ul>
+    </aside>
+    
+    <section id="citas">
+        <h2>Cita Inspiradora</h2>
+        <blockquote>
+            "Las contraseñas son como la ropa interior. No puedes dejar que nadie la vea, debes cambiarla regularmente y no debes compartirla con extraños" <cite>- Chris Pirillo</cite>
+        </blockquote>
+    </section>
+    
+    <section id="popularidad">
+        <h2>Popularidad de Artículos</h2>
+        <svg viewBox="0 0 100 50" id="grafico-popularidad">
+            <rect class="bar" x="10" y="20" width="20" height="30" fill="blue" data-id="1"></rect>
+            <rect class="bar" x="40" y="20" width="20" height="30" fill="red" data-id="2"></rect>
+            <rect class="bar" x="70" y="20" width="20" height="30" fill="green" data-id="3"></rect>
+        </svg>
+    </section>
+    
+    <progress id="progreso" value="0" max="100"></progress>
+    
+    <script>
+        function leerArticulo(id) {
+            // Obtener el artículo y su contador de lecturas
+            var articulo = document.querySelector('article[data-id="' + id + '"]');
+            var lecturas = parseInt(articulo.getAttribute('data-lecturas')) + 1;
+            articulo.setAttribute('data-lecturas', lecturas);
+            
+            // Actualizar la barra correspondiente en el gráfico
+            var barra = document.querySelector('.bar[data-id="' + id + '"]');
+            var nuevaAltura = Math.min(lecturas * 10, 50); // Limitar la altura máxima
+            barra.setAttribute('height', nuevaAltura);
+            barra.setAttribute('y', 50 - nuevaAltura); // Ajustar la posición vertical
+            
+            // Actualizar la barra de progreso
+            var progreso = document.getElementById('progreso');
+            if (progreso.value < 100) {
+                progreso.value += 20;
+            }
+        }
+    </script>
+    
+    <footer>
+        <p>&copy; 2025 Mi Blog Personal</p>
+    </footer>
+</body>
+</html>
